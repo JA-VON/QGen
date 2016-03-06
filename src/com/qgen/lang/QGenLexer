@@ -1,0 +1,102 @@
+/* Specification for ECOLI tokens */
+
+// user customisations
+package hpl.lang;
+
+import com.qgen.sys.*;
+import java_cup.runtime.*;
+
+%%
+
+%cup
+%public
+
+%class QGenLexer
+
+%type java_cup.runtime.Symbol
+
+%eofval{
+	return new Symbol(sym.EOF);
+%eofval}
+
+%state STRING
+
+%char
+%line
+
+%{
+    public int getChar()
+    {
+	return yychar + 1;
+    }
+
+    public int getLine()
+    {
+	return yyline + 1;
+    }
+
+    public String getText()
+    {
+	return yytext();
+    }
+%}
+
+nl = [\n\r]
+
+cc = [\b\f]|{nl}
+
+ws = ({cc}|[\t" "])
+
+num = [0-9]
+alpha = [A-Za-z_]
+alphanum = ({alpha}|{num})
+
+%%
+<YYINITIAL>	"END"	{ //. on a line by itself is EOF
+			  return new Symbol(sym.EOF);}
+
+<YYINITIAL>    {nl} {
+                        //skip newline, but reset char counter
+                        yychar = 0;
+                      }
+<YYINITIAL>    {ws} { // ignore whitespace
+                      }
+
+<YYINITIAL>    : { return new Symbol(sym.COLON);}
+
+<YYINITIAL>    "{" { return new Symbol(sym.LBRACE); }
+
+<YYINITIAL>    "}" { return new Symbol(sym.RBRACE); }
+
+<YYINITIAL>     title { return new Symbol(sym.TITLE); }
+
+<YYINITIAL>     type { return new Symbol(sym.TYPE); }
+
+<YYINITIAL>     count { return new Symbol(sym.COUNT); }
+
+<YYINITIAL>     def { return new Symbol(sym.DEF); }
+
+<YYINITIAL>     body { return new Symbol(sym.BODY); }
+
+<YYINITIAL>     ans { return new Symbol(sym.ANS); }
+
+<YYINITIAL>    	{num}+ {
+	       		// INTEGER
+	       		return new Symbol(sym.INTEGER, new Integer(yytext()));
+	       	}
+
+
+<YYINITIAL>	\" {
+			yybegin(STRING);
+		}
+
+<YYINITIAL>	. {
+		    throw new java.io.IOException("Unrecognised character: " +
+							yytext());
+		}
+
+<STRING>	[^\"]* {
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
+		}
