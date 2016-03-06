@@ -52,7 +52,7 @@ alpha = [A-Za-z_]
 alphanum = ({alpha}|{num})
 
 %%
-<YYINITIAL>	"END"	{ //. on a line by itself is EOF
+<YYINITIAL>	"END"	{ // END on a line by itself is EOF
 			  return new Symbol(sym.EOF);}
 
 <YYINITIAL>    {nl} {
@@ -67,6 +67,10 @@ alphanum = ({alpha}|{num})
 <YYINITIAL>    "{" { return new Symbol(sym.LBRACE); }
 
 <YYINITIAL>    "}" { return new Symbol(sym.RBRACE); }
+
+<YYINITIAL>    "(" { return new Symbol(sym.LBRACKET); }
+
+<YYINITIAL>    ")" { return new Symbol(sym.RBRACKET); }
 
 <YYINITIAL>     title { return new Symbol(sym.TITLE); }
 

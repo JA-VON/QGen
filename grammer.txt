@@ -1,0 +1,12 @@
+Program -> titleExp typeExp countExp defLst bodyExp ansLst END
+titleExp -> title : {string}
+typeExp -> type : {string}
+countExp -> count : {integer}
+defLst -> defExp defLst | e
+defExp -> def(Var): { return random(integer, integer) }
+bodyExp -> body : { expE }
+ansLst -> ansExp ansLst | e
+ansExp -> ans : { expE }
+expE -> exp expE | e
+exp -> string| lookup
+lookup -> $(var)
