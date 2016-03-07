@@ -1,0 +1,143 @@
+package com.qgen.lang;
+
+import java_cup.runtime.*;
+import java.io.*;
+import java.util.*;
+
+/* Preliminaries to set up and use the scanner.  */
+action code {:          :};
+
+parser code {:
+		HPLLexer lexer;
+
+		public HPLParser(HPLLexer l) {
+                    super(l);
+                    lexer = l;
+                }
+
+		public HPLParser(String file) throws FileNotFoundException {
+	            this(new HPLLexer(new FileReader(file)));
+		}
+
+                public HPLParser(InputStream is) {
+                    this(new HPLLexer(is));
+                }
+
+		public void report_error(String message, Object info) {
+		    System.err.println(message + info);
+		}
+
+		public void syntax_error(Symbol cur_token) {
+		    System.err.print("Line " + lexer.getLine() +
+				     " near char " + lexer.getChar() + ": ");
+		    report_error("Syntax error while reading: ", cur_token);
+		    System.err.println ("Last token read is " +
+					 lexer.getText());
+		}
+	    :};
+
+init with {:
+		// No longer necessary
+	  :};
+
+scan with {:
+		try {
+		    return lexer.next_token();
+		} catch (java.io.IOException ioe) {
+		    System.out.println ("Unrecognised token at line: " +
+                                lexer.getLine() + ", char: " + lexer.getChar());
+		    System.out.println(ioe.getMessage());
+		    throw ioe;
+		}
+	  :};
+
+/* Terminals (tokens returned by the scanner). */
+
+//Keywords
+terminal DEF, TITLE, TYPE, COUNT, ANS, BODY;
+
+//Punctuation
+terminal LPAREN, RPAREN, LBRACE, RBRACE, DOLLA, COLON;
+
+terminal String VAR;
+terminal Integer INTEGER;
+terminal String STRING;
+
+non terminal QGenProgram program;
+non terminal QGenTitleExp titleExp;
+non terminal QGenTypeExp typeExp;
+non terminal QGenCountExp countExp;
+non terminal QGenDefinitionExp defExp;
+non terminal QGenBodyExp bodyExp;
+non terminal QGenAnswerExp ansExp;
+non terminal QGenLookupExp lookupExp;
+non terminal QGenExp exp;
+
+non terminal ArrayList<QGenDefinitionExp> defExpLst;
+non terminal ArrayList<QGenDefinitionExp> defExpLstE;
+non terminal ArrayList<QGenAnswerExp> ansExpLst;
+non terminal ArrayList<QGenExp> expLst;
+
+non terminal empty;
+
+// Grammar rules
+
+start with program;
+
+program ::= titleExp:title typeExp:type countExp:count defExpLstE:definitions bodyExp:body ansExpLst:answers {:
+        RESULT = new QGenProgram(title, type, count, definitions, body, answers);
+    :};
+
+titleExp ::= TITLE COLON LBRACE STRING:title RBRACE {: RESULT = new QGenTitleExp(title); :};
+
+typeExp ::= TYPE COLON LBRACE STRING:type RBRACE {: RESULT = new QGenTypeExp(type); :};
+
+countExp ::= COUNT COLON LBRACE INTEGER:count RBRACE {: RESULT = new QGenCountExp(count); :};
+
+defExpLstE ::= defExpLst:lst {: RESULT = lst; :} |
+	       empty {: RESULT = new ArrayList<>(); :} ;
+
+defExpLst ::= defExpLst:lst defExp:def  {:
+                lst.add(def);
+                RESULT = lst; :} |
+                defExp:def {:
+                    RESULT = new ArrayList<>();
+                    RESULT.add(def);
+                :};
+
+defExp ::= DEF LPAREN VAR:id RPAREN COLON LBRACE STRING:string RBRACE {:
+        RESULT = new QGenDefinitionExp(id,string); :};
+
+bodyExp ::= BODY COLON LBRACE expLst:lst RBRACE {:
+            RESULT = new QGenBodyExp(lst); :};
+
+ansExpLst ::= ansExpLst:lst ansExp:ans {:
+            lst.add(ans);
+            RESULT = lst;
+            :} |
+            ansExp:ans {:
+                RESULT = new ArrayList<>();
+                RESULT.add(ans);
+            :};
+
+ansExp ::= ANS COLON LBRACE expLst:lst RBRACE {:
+        RESULT = new QGenAnswerExp(lst); :};
+
+expLst ::= expLst:lst exp:lit {:
+            lst.add(lit);
+            RESULT = lst;
+            :} |
+            exp:lit {:
+                RESULT = new ArrayList<>();
+                RESULT.add(lit);
+            :};
+
+exp ::= STRING:stringlit {:
+            RESULT = new QGenString(stringlit); :}
+        lookupExp:lookup {: RESULT = lookup; :}
+
+lookupExp ::= DOLLA LPAREN VAR:id RPAREN {:
+            RESUlT = new QGenLookup(id);
+            :};
+
+empty ::= ;

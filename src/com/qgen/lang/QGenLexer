@@ -68,9 +68,9 @@ alphanum = ({alpha}|{num})
 
 <YYINITIAL>    "}" { return new Symbol(sym.RBRACE); }
 
-<YYINITIAL>    "(" { return new Symbol(sym.LBRACKET); }
+<YYINITIAL>    "(" { return new Symbol(sym.LPAREN); }
 
-<YYINITIAL>    ")" { return new Symbol(sym.RBRACKET); }
+<YYINITIAL>    ")" { return new Symbol(sym.RPAREN); }
 
 <YYINITIAL>     title { return new Symbol(sym.TITLE); }
 
@@ -83,6 +83,13 @@ alphanum = ({alpha}|{num})
 <YYINITIAL>     body { return new Symbol(sym.BODY); }
 
 <YYINITIAL>     ans { return new Symbol(sym.ANS); }
+
+<YYINITIAL>     "$" { return new Symbol(sym.DOLLA); }
+
+<YYINITIAL>	{alpha}+{alphanum}* {
+			// IDENTIFIER
+			return new Symbol(sym.VAR, yytext());
+		}
 
 <YYINITIAL>    	{num}+ {
 	       		// INTEGER
