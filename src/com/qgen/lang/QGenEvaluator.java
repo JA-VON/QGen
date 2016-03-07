@@ -6,6 +6,7 @@ import com.qgen.sys.QGenException;
 import com.qgen.values.QGenValue;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by javon on 06/03/2016.
@@ -38,7 +39,7 @@ public class QGenEvaluator implements QGenVisitor<QGenContext,QGenValue> {
         for(int i = 0; i <count; i++) {
             //define variables
             for (QGenDefinitionExp definition : definitionList) {
-                QGenValue defResult = definition.visit(this, context);
+                definition.visit(this, context);
             }
 
             QGenValue bodyResult = bodyExp.visit(this,context);
@@ -82,6 +83,12 @@ public class QGenEvaluator implements QGenVisitor<QGenContext,QGenValue> {
 
     @Override
     public QGenValue visitQGenDefinitionExp(QGenDefinitionExp expDef, QGenContext context) throws QGenException {
+        String name = expDef.getIdentifier();
+        QGenExp exp = expDef.getValue();
+
+        QGenValue value = exp.visit(this,context);
+        context.getValueEnvironment().put(name,value);
+
         return QGenValue.NO_RESULT;
     }
 
@@ -93,7 +100,7 @@ public class QGenEvaluator implements QGenVisitor<QGenContext,QGenValue> {
         StringBuilder builder = new StringBuilder();
         for(QGenExp exp: expList)
         {
-            builder.append(exp.visit(this,context).getVal());
+            builder.append(exp.visit(this,context).getVal()+" ");
         }
         QGenValue<String> result = new QGenValue<>(builder.toString());
         return result;
@@ -107,21 +114,40 @@ public class QGenEvaluator implements QGenVisitor<QGenContext,QGenValue> {
         StringBuilder builder = new StringBuilder();
         for(QGenExp exp: expList)
         {
-            builder.append(exp.visit(this,context).getVal());
+            builder.append(exp.visit(this,context).getVal()+" ");
         }
         QGenValue<String> result = new QGenValue<>(builder.toString());
         return result;
     }
 
     @Override
-    public QGenValue visitQGenLookupExp(QGenLookupExp expLookup, QGenContext context) throws QGenException {
+    public QGenValue visitQGenFunctionCallExp(QGenFunctionCallExp expFunCall, QGenContext context) throws QGenException {
+        String name = expFunCall.getName();
+
+        //buitins can go here
+        switch (name)
+        {
+            case "$random":
+                int max = 100;
+                int min = 1;
+                int randomNumber = new Random()
+                        .nextInt(max - min + 1) + min;
+                QGenValue<Integer> result =  new QGenValue<>(randomNumber);
+                return result;
+        }
         return QGenValue.NO_RESULT;
+    }
+
+    @Override
+    public QGenValue visitQGenLookupExp(QGenLookupExp expLookup, QGenContext context) throws QGenException {
+        QGenValue result = context.getValueEnvironment().get(expLookup.getIdentifier());
+        return result;
     }
 
     @Override
     public QGenValue visitQGenStringExp(QGenStringExp expString, QGenContext context) throws QGenException {
         String string = expString.getString();
-        QGenValue<String> result = new QGenValue<>(string+" ");
+        QGenValue<String> result = new QGenValue<>(string);
         return result;
     }
 }

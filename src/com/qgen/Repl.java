@@ -19,6 +19,7 @@ public class Repl {
 
     public static void main(String[] args)
     {
+        globalEnv = new QGenContext();
         interp = new QGenEvaluator();
         if (args.length == 0) {
             repl(System.in, globalEnv);

@@ -33,13 +33,13 @@ public class QGenParser extends java_cup.runtime.lr_parser {
   /** Production table. */
   protected static final short _production_table[][] = 
     unpackFromStrings(new String[] {
-    "\000\024\000\002\002\004\000\002\002\010\000\002\003" +
-    "\007\000\002\004\007\000\002\005\005\000\002\014\003" +
-    "\000\002\014\003\000\002\013\004\000\002\013\003\000" +
-    "\002\006\012\000\002\007\007\000\002\015\004\000\002" +
-    "\015\003\000\002\010\007\000\002\016\004\000\002\016" +
-    "\003\000\002\012\003\000\002\012\003\000\002\011\005" +
-    "\000\002\017\002" });
+    "\000\025\000\002\002\004\000\002\002\010\000\002\003" +
+    "\007\000\002\004\007\000\002\005\005\000\002\015\003" +
+    "\000\002\015\003\000\002\014\004\000\002\014\003\000" +
+    "\002\006\012\000\002\007\007\000\002\016\004\000\002" +
+    "\016\003\000\002\010\007\000\002\017\004\000\002\017" +
+    "\003\000\002\013\003\000\002\013\003\000\002\011\003" +
+    "\000\002\012\005\000\002\020\002" });
 
   /** Access to production table. */
   public short[][] production_table() {return _production_table;}
@@ -47,35 +47,36 @@ public class QGenParser extends java_cup.runtime.lr_parser {
   /** Parse-action table. */
   protected static final short[][] _action_table = 
     unpackFromStrings(new String[] {
-    "\000\065\000\004\005\006\001\002\000\004\002\067\001" +
+    "\000\066\000\004\005\006\001\002\000\004\002\070\001" +
     "\002\000\004\006\014\001\002\000\004\016\007\001\002" +
     "\000\004\014\010\001\002\000\004\021\011\001\002\000" +
     "\004\015\012\001\002\000\004\006\uffff\001\002\000\004" +
     "\007\022\001\002\000\004\016\015\001\002\000\004\014" +
     "\016\001\002\000\004\021\017\001\002\000\004\015\020" +
     "\001\002\000\004\007\ufffe\001\002\000\006\004\025\011" +
-    "\uffee\001\002\000\004\016\023\001\002\000\004\020\024" +
+    "\uffed\001\002\000\004\016\023\001\002\000\004\020\024" +
     "\001\002\000\006\004\ufffd\011\ufffd\001\002\000\004\012" +
-    "\060\001\002\000\004\011\ufffb\001\002\000\006\004\025" +
+    "\056\001\002\000\004\011\ufffb\001\002\000\006\004\025" +
     "\011\ufffc\001\002\000\006\004\ufff9\011\ufff9\001\002\000" +
-    "\004\011\033\001\002\000\004\010\051\001\002\000\004" +
-    "\016\034\001\002\000\004\014\035\001\002\000\006\012" +
-    "\041\021\037\001\002\000\010\012\ufff0\015\ufff0\021\ufff0" +
-    "\001\002\000\010\012\ufff1\015\ufff1\021\ufff1\001\002\000" +
-    "\010\012\041\015\045\021\037\001\002\000\004\017\043" +
-    "\001\002\000\010\012\ufff2\015\ufff2\021\ufff2\001\002\000" +
-    "\004\013\044\001\002\000\010\012\uffef\015\uffef\021\uffef" +
-    "\001\002\000\004\010\ufff7\001\002\000\010\012\ufff3\015" +
-    "\ufff3\021\ufff3\001\002\000\006\002\000\010\051\001\002" +
-    "\000\006\002\ufff5\010\ufff5\001\002\000\004\016\052\001" +
-    "\002\000\004\014\053\001\002\000\006\012\041\021\037" +
-    "\001\002\000\010\012\041\015\055\021\037\001\002\000" +
-    "\006\002\ufff4\010\ufff4\001\002\000\006\002\ufff6\010\ufff6" +
-    "\001\002\000\006\004\ufffa\011\ufffa\001\002\000\004\017" +
-    "\061\001\002\000\004\013\062\001\002\000\004\016\063" +
-    "\001\002\000\004\014\064\001\002\000\004\021\065\001" +
-    "\002\000\004\015\066\001\002\000\006\004\ufff8\011\ufff8" +
-    "\001\002\000\004\002\001\001\002" });
+    "\004\011\033\001\002\000\004\010\047\001\002\000\004" +
+    "\016\034\001\002\000\004\014\035\001\002\000\006\017" +
+    "\036\021\040\001\002\000\010\015\uffef\017\uffef\021\uffef" +
+    "\001\002\000\010\015\ufff0\017\ufff0\021\ufff0\001\002\000" +
+    "\010\015\ufff1\017\ufff1\021\ufff1\001\002\000\010\015\043" +
+    "\017\036\021\040\001\002\000\010\015\ufff2\017\ufff2\021" +
+    "\ufff2\001\002\000\004\010\ufff7\001\002\000\010\015\ufff3" +
+    "\017\ufff3\021\ufff3\001\002\000\006\002\000\010\047\001" +
+    "\002\000\006\002\ufff5\010\ufff5\001\002\000\004\016\050" +
+    "\001\002\000\004\014\051\001\002\000\006\017\036\021" +
+    "\040\001\002\000\010\015\053\017\036\021\040\001\002" +
+    "\000\006\002\ufff4\010\ufff4\001\002\000\006\002\ufff6\010" +
+    "\ufff6\001\002\000\006\004\ufffa\011\ufffa\001\002\000\004" +
+    "\017\057\001\002\000\004\013\060\001\002\000\004\016" +
+    "\061\001\002\000\004\014\062\001\002\000\004\017\063" +
+    "\001\002\000\004\012\066\001\002\000\004\015\065\001" +
+    "\002\000\006\004\ufff8\011\ufff8\001\002\000\004\013\067" +
+    "\001\002\000\004\015\uffee\001\002\000\004\002\001\001" +
+    "\002" });
 
   /** Access to parse-action table. */
   public short[][] action_table() {return _action_table;}
@@ -83,27 +84,27 @@ public class QGenParser extends java_cup.runtime.lr_parser {
   /** <code>reduce_goto</code> table. */
   protected static final short[][] _reduce_table = 
     unpackFromStrings(new String[] {
-    "\000\065\000\006\002\003\003\004\001\001\000\002\001" +
+    "\000\066\000\006\002\003\003\004\001\001\000\002\001" +
     "\001\000\004\004\012\001\001\000\002\001\001\000\002" +
     "\001\001\000\002\001\001\000\002\001\001\000\002\001" +
     "\001\000\004\005\020\001\001\000\002\001\001\000\002" +
     "\001\001\000\002\001\001\000\002\001\001\000\002\001" +
-    "\001\000\012\006\027\013\026\014\030\017\025\001\001" +
+    "\001\000\012\006\027\014\026\015\030\020\025\001\001" +
     "\000\002\001\001\000\002\001\001\000\002\001\001\000" +
-    "\002\001\001\000\002\001\001\000\004\006\056\001\001" +
+    "\002\001\001\000\002\001\001\000\004\006\054\001\001" +
     "\000\002\001\001\000\004\007\031\001\001\000\006\010" +
-    "\047\015\046\001\001\000\002\001\001\000\002\001\001" +
-    "\000\010\011\035\012\041\016\037\001\001\000\002\001" +
-    "\001\000\002\001\001\000\006\011\035\012\045\001\001" +
+    "\045\016\044\001\001\000\002\001\001\000\002\001\001" +
+    "\000\010\011\036\013\041\017\040\001\001\000\002\001" +
+    "\001\000\002\001\001\000\002\001\001\000\006\011\036" +
+    "\013\043\001\001\000\002\001\001\000\002\001\001\000" +
+    "\002\001\001\000\004\010\053\001\001\000\002\001\001" +
+    "\000\002\001\001\000\002\001\001\000\010\011\036\013" +
+    "\041\017\051\001\001\000\006\011\036\013\043\001\001" +
     "\000\002\001\001\000\002\001\001\000\002\001\001\000" +
-    "\002\001\001\000\002\001\001\000\002\001\001\000\004" +
-    "\010\055\001\001\000\002\001\001\000\002\001\001\000" +
-    "\002\001\001\000\010\011\035\012\041\016\053\001\001" +
-    "\000\006\011\035\012\045\001\001\000\002\001\001\000" +
     "\002\001\001\000\002\001\001\000\002\001\001\000\002" +
-    "\001\001\000\002\001\001\000\002\001\001\000\002\001" +
-    "\001\000\002\001\001\000\002\001\001\000\002\001\001" +
-    "" });
+    "\001\001\000\004\012\063\001\001\000\002\001\001\000" +
+    "\002\001\001\000\002\001\001\000\002\001\001\000\002" +
+    "\001\001\000\002\001\001" });
 
   /** Access to <code>reduce_goto</code> table. */
   public short[][] reduce_table() {return _reduce_table;}
@@ -307,7 +308,7 @@ class CUP$QGenParser$actions {
 		int lstright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()).right;
 		ArrayList<QGenDefinitionExp> lst = (ArrayList<QGenDefinitionExp>)((java_cup.runtime.Symbol) CUP$QGenParser$stack.peek()).value;
 		 RESULT = lst; 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLstE",10, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLstE",11, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -316,7 +317,7 @@ class CUP$QGenParser$actions {
             {
               ArrayList<QGenDefinitionExp> RESULT =null;
 		 RESULT = new ArrayList<>(); 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLstE",10, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLstE",11, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -333,7 +334,7 @@ class CUP$QGenParser$actions {
 		
                 lst.add(def);
                 RESULT = lst; 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLst",9, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLst",10, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -348,22 +349,22 @@ class CUP$QGenParser$actions {
                     RESULT = new ArrayList<>();
                     RESULT.add(def);
                 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLst",9, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExpLst",10, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 9: // defExp ::= DEF LPAREN VAR RPAREN COLON LBRACE STRING RBRACE 
+          case 9: // defExp ::= DEF LPAREN VAR RPAREN COLON LBRACE funCall RBRACE 
             {
               QGenDefinitionExp RESULT =null;
 		int idleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-5)).left;
 		int idright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-5)).right;
 		String id = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-5)).value;
-		int stringleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).left;
-		int stringright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).right;
-		String string = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).value;
+		int fcleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).left;
+		int fcright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).right;
+		QGenFunctionCallExp fc = (QGenFunctionCallExp)((java_cup.runtime.Symbol) CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).value;
 		
-        RESULT = new QGenDefinitionExp(id,string); 
+        RESULT = new QGenDefinitionExp(id,fc); 
               CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("defExp",4, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-7)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
@@ -395,7 +396,7 @@ class CUP$QGenParser$actions {
             lst.add(ans);
             RESULT = lst;
             
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("ansExpLst",11, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("ansExpLst",12, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -410,7 +411,7 @@ class CUP$QGenParser$actions {
                 RESULT = new ArrayList<>();
                 RESULT.add(ans);
             
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("ansExpLst",11, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("ansExpLst",12, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -441,7 +442,7 @@ class CUP$QGenParser$actions {
             lst.add(lit);
             RESULT = lst;
             
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("expLst",12, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("expLst",13, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -456,7 +457,7 @@ class CUP$QGenParser$actions {
                 RESULT = new ArrayList<>();
                 RESULT.add(lit);
             
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("expLst",12, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("expLst",13, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -469,7 +470,7 @@ class CUP$QGenParser$actions {
 		String stringlit = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.peek()).value;
 		
             RESULT = new QGenStringExp(stringlit); 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("exp",8, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("exp",9, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
@@ -481,30 +482,42 @@ class CUP$QGenParser$actions {
 		int lookupright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()).right;
 		QGenLookupExp lookup = (QGenLookupExp)((java_cup.runtime.Symbol) CUP$QGenParser$stack.peek()).value;
 		 RESULT = lookup; 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("exp",8, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("exp",9, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 18: // lookupExp ::= LPAREN VAR RPAREN 
+          case 18: // lookupExp ::= VAR 
             {
               QGenLookupExp RESULT =null;
-		int idleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).left;
-		int idright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).right;
-		String id = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-1)).value;
+		int idleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()).left;
+		int idright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()).right;
+		String id = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.peek()).value;
 		
             RESULT = new QGenLookupExp(id);
             
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("lookupExp",7, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-2)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("lookupExp",7, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 
           /*. . . . . . . . . . . . . . . . . . . .*/
-          case 19: // empty ::= 
+          case 19: // funCall ::= VAR LPAREN RPAREN 
+            {
+              QGenFunctionCallExp RESULT =null;
+		int vleft = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-2)).left;
+		int vright = ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-2)).right;
+		String v = (String)((java_cup.runtime.Symbol) CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-2)).value;
+		 RESULT = new QGenFunctionCallExp(v); 
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("funCall",8, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.elementAt(CUP$QGenParser$top-2)), ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+            }
+          return CUP$QGenParser$result;
+
+          /*. . . . . . . . . . . . . . . . . . . .*/
+          case 20: // empty ::= 
             {
               Object RESULT =null;
 
-              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("empty",13, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
+              CUP$QGenParser$result = parser.getSymbolFactory().newSymbol("empty",14, ((java_cup.runtime.Symbol)CUP$QGenParser$stack.peek()), RESULT);
             }
           return CUP$QGenParser$result;
 

@@ -8,7 +8,7 @@
   </question><question type="multichoice"><name>
       <text>Print_Statements</text>
     </name><questiontext format="html">
-      <text>xm= dog print I_m +xm+years old What would be the result of the following? </text>
+      <text>xm= 87 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
     </questiontext><generalfeedback format="html">
       <text></text>
     </generalfeedback>
@@ -27,24 +27,24 @@
     <incorrectfeedback format="html">
       <text></text>
     </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dogs years old </text>
+      <text>I_m am 87 dogs years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dog years old </text>
+      <text>I_m am 87 dog years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am doggy years old </text>
+      <text>I_m am 87 doggy years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer>  </question><question type="multichoice"><name>
       <text>Print_Statements</text>
     </name><questiontext format="html">
-      <text>xm= dog print I_m +xm+years old What would be the result of the following? </text>
+      <text>xm= 65 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
     </questiontext><generalfeedback format="html">
       <text></text>
     </generalfeedback>
@@ -63,24 +63,24 @@
     <incorrectfeedback format="html">
       <text></text>
     </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dogs years old </text>
+      <text>I_m am 65 dogs years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dog years old </text>
+      <text>I_m am 65 dog years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am doggy years old </text>
+      <text>I_m am 65 doggy years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer>  </question><question type="multichoice"><name>
       <text>Print_Statements</text>
     </name><questiontext format="html">
-      <text>xm= dog print I_m +xm+years old What would be the result of the following? </text>
+      <text>xm= 71 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
     </questiontext><generalfeedback format="html">
       <text></text>
     </generalfeedback>
@@ -99,17 +99,1349 @@
     <incorrectfeedback format="html">
       <text></text>
     </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dogs years old </text>
+      <text>I_m am 71 dogs years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am dog years old </text>
+      <text>I_m am 71 dog years old </text>
       <feedback format="html">
         <text></text>
       </feedback>
     </answer><answer fraction="0" format="moodle_auto_format">
-      <text>I_m am doggy years old </text>
+      <text>I_m am 71 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 55 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 25 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 73 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 73 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 73 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 73 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 18 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 18 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 18 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 18 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 58 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 58 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 58 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 58 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 25 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 25 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 88 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 54 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 54 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 54 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 54 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 19 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 19 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 19 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 19 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 55 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 55 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 89 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 89 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 89 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 89 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 94 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 94 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 94 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 94 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 38 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 38 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 38 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 38 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 3 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 3 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 3 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 3 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 95 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 95 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 95 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 95 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 14 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 14 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 14 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 14 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 63 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 63 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 63 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 63 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 16 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 16 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 16 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 16 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 46 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 46 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 46 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 46 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 60 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 60 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 60 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 60 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 52 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 88 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 88 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 30 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 30 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 30 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 30 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 42 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 42 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 42 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 42 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 61 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 61 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 61 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 61 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 52 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 59 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 59 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 59 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 59 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 36 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 36 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 36 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 36 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 31 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 31 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 31 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 31 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 52 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 52 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 23 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 23 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 23 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 23 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 48 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 48 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 48 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 48 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 75 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 75 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 75 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 75 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 91 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 91 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 91 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 91 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 87 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 87 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 87 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 87 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 27 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 27 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 27 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 27 doggy years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>  </question><question type="multichoice"><name>
+      <text>Print_Statements</text>
+    </name><questiontext format="html">
+      <text>xm= 74 print "I_m "+ xm "+ dog years old" What would be the result of the following? </text>
+    </questiontext><generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 74 dogs years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 74 dog years old </text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer><answer fraction="0" format="moodle_auto_format">
+      <text>I_m am 74 doggy years old </text>
       <feedback format="html">
         <text></text>
       </feedback>

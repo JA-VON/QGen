@@ -71,6 +71,7 @@ non terminal QGenDefinitionExp defExp;
 non terminal QGenBodyExp bodyExp;
 non terminal QGenAnswerExp ansExp;
 non terminal QGenLookupExp lookupExp;
+non terminal QGenFunctionCallExp funCall;
 non terminal QGenExp exp;
 
 non terminal ArrayList<QGenDefinitionExp> defExpLst;
@@ -105,8 +106,8 @@ defExpLst ::= defExpLst:lst defExp:def  {:
                     RESULT.add(def);
                 :};
 
-defExp ::= DEF LPAREN VAR:id RPAREN COLON LBRACE STRING:string RBRACE {:
-        RESULT = new QGenDefinitionExp(id,string); :};
+defExp ::= DEF LPAREN VAR:id RPAREN COLON LBRACE funCall:fc RBRACE {:
+        RESULT = new QGenDefinitionExp(id,fc); :};
 
 bodyExp ::= BODY COLON LBRACE expLst:lst RBRACE {:
             RESULT = new QGenBodyExp(lst); :};
@@ -136,8 +137,10 @@ exp ::= STRING:stringlit {:
             RESULT = new QGenStringExp(stringlit); :} |
         lookupExp:lookup {: RESULT = lookup; :};
 
-lookupExp ::= LPAREN VAR:id RPAREN {:
+lookupExp ::= VAR:id {:
             RESULT = new QGenLookupExp(id);
             :};
+
+funCall ::= VAR:v LPAREN RPAREN {: RESULT = new QGenFunctionCallExp(v); :};
 
 empty ::= ;

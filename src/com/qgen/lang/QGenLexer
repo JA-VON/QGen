@@ -93,7 +93,7 @@ alphanum = ({alpha}|{num})
 							yytext());
 		}
 
-<YYINITIAL>	([A-Za-z_=+?]+) {
+<YYINITIAL>	([A-Za-z_=+?"\""]+) {
 			// constant string
 			// System.out.println(yytext());
 			return new Symbol(sym.STRING, yytext());

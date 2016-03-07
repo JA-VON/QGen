@@ -4,6 +4,7 @@
 ./com/qgen/lang/QGenDefinitionExp.java
 ./com/qgen/lang/QGenEvaluator.java
 ./com/qgen/lang/QGenExp.java
+./com/qgen/lang/QGenFunctionCallExp.java
 ./com/qgen/lang/QGenLexer.java
 ./com/qgen/lang/QGenLookupExp.java
 ./com/qgen/lang/QGenParser.java
@@ -16,6 +17,7 @@
 ./com/qgen/Repl.java
 ./com/qgen/sys/MoodleXMLBuilder.java
 ./com/qgen/sys/QGenContext.java
+./com/qgen/sys/QGenEnvironment.java
 ./com/qgen/sys/QGenException.java
 ./com/qgen/values/QGenValue.java
 ./JLex/Main.java

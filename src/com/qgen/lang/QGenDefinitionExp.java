@@ -8,9 +8,9 @@ import com.qgen.sys.QGenException;
 public class QGenDefinitionExp extends QGenExp{
 
     private String identifier;
-    private String value; //temp value for now as string
+    private QGenExp value; //temp value for now as string
 
-    public QGenDefinitionExp(String identifier, String value) {
+    public QGenDefinitionExp(String identifier, QGenExp value) {
         this.identifier = identifier;
         this.value = value;
     }
@@ -23,11 +23,11 @@ public class QGenDefinitionExp extends QGenExp{
         this.identifier = identifier;
     }
 
-    public String getValue() {
+    public QGenExp getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(QGenExp value) {
         this.value = value;
     }
 

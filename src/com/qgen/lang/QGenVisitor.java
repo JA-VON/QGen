@@ -17,6 +17,7 @@ public interface QGenVisitor<S, T> {
     T visitQGenDefinitionExp(QGenDefinitionExp expDef, S context) throws QGenException;
     T visitQGenBodyExp(QGenBodyExp expBody, S context) throws QGenException;
     T visitQGenAnsExp(QGenAnswerExp expAns, S context) throws QGenException;
+    T visitQGenFunctionCallExp(QGenFunctionCallExp expFunCall, S context) throws QGenException;
 
     T visitQGenLookupExp(QGenLookupExp expLookup, S context) throws QGenException;
 
