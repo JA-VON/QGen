@@ -1,32 +1,27 @@
-title : {Question}
+title : {Print_Statements}
 type : {multichoice}
-count: 40
-
-def($a):
-{
-return
-}
+count: 3
 
 body:
 {
-xm= ($a)
-print I_m +x+years old
+xm= dog
+print I_m +xm+years old
 
 What would be the result of the following?
 }
 
 ans:
 {
-I_m am ($a) years old
+I_m am dogs years old
 }
 
 ans:
 {
-I_m am ($a) years old
+I_m am dog years old
 }
 
 ans:
 {
-I_m am ($a) years old
+I_m am doggy years old
 }
 END

@@ -9,6 +9,7 @@ public class QGenLookupExp extends QGenExp{
     private String identifier;
 
     public QGenLookupExp(String identifier) {
+        System.out.println("lookup:"+identifier);
         this.identifier = identifier;
     }
 

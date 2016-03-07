@@ -25,9 +25,9 @@ public class Repl {
         }
         else {
             try {
-                parseEvalShow(new FileReader(new File(args[0])), globalEnv);
+                parseEvalShow(args[0],new FileReader(new File(args[0]+".qg")), globalEnv);
             } catch(FileNotFoundException e) {
-                System.out.println("Could not find file " + args[0]);
+                System.out.println("Could not find file " + args[0]+".qg");
             }
         }
     }
@@ -56,14 +56,14 @@ public class Repl {
                     line = reader.readLine();
                 }
                 StringReader r = new StringReader(new String(input));
-                parseEvalShow(r, genv);
+                parseEvalShow("tmp", r, genv);
             }
         } catch (IOException ex) {
             System.out.println("Bye bye!");
         }
     }
 
-    public static void parseEvalShow(Reader r, QGenContext env) {
+    public static void parseEvalShow(String arg, Reader r, QGenContext env) {
         QGenLexer lexer;
         QGenParser parser;
         QGenProgram template = null;
@@ -81,12 +81,16 @@ public class Repl {
             try {
                 result = template.visit(interp, env);
                 if (result != null) {
-                    System.out.println("\n" + result.getVal().toString());
+                    //System.out.println("\n" + result.getVal().toString());
+                    PrintStream out = new PrintStream(new FileOutputStream(arg+".xml"));
+                    out.print(result.getVal().toString());
                 } else {
                     System.out.println("\nNo result");
                 }
             } catch (QGenException e) {
                 System.out.println("Runtime Error: " + e.getMessage());
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
             }
     }
 }
