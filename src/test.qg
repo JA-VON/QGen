@@ -1,0 +1,32 @@
+title : {Question}
+type : {multichoice}
+count: 40
+
+def($a):
+{
+return
+}
+
+body:
+{
+xm= ($a)
+print I_m +x+years old
+
+What would be the result of the following?
+}
+
+ans:
+{
+I_m am ($a) years old
+}
+
+ans:
+{
+I_m am ($a) years old
+}
+
+ans:
+{
+I_m am ($a) years old
+}
+END

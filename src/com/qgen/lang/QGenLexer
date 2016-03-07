@@ -1,7 +1,7 @@
 /* Specification for ECOLI tokens */
 
 // user customisations
-package hpl.lang;
+package com.qgen.lang;
 
 import com.qgen.sys.*;
 import java_cup.runtime.*;
@@ -65,48 +65,35 @@ alphanum = ({alpha}|{num})
 <YYINITIAL>    : { return new Symbol(sym.COLON);}
 
 <YYINITIAL>    "{" { return new Symbol(sym.LBRACE); }
-
 <YYINITIAL>    "}" { return new Symbol(sym.RBRACE); }
 
 <YYINITIAL>    "(" { return new Symbol(sym.LPAREN); }
-
 <YYINITIAL>    ")" { return new Symbol(sym.RPAREN); }
 
 <YYINITIAL>     title { return new Symbol(sym.TITLE); }
-
 <YYINITIAL>     type { return new Symbol(sym.TYPE); }
-
 <YYINITIAL>     count { return new Symbol(sym.COUNT); }
-
 <YYINITIAL>     def { return new Symbol(sym.DEF); }
-
 <YYINITIAL>     body { return new Symbol(sym.BODY); }
-
 <YYINITIAL>     ans { return new Symbol(sym.ANS); }
 
-<YYINITIAL>     "$" { return new Symbol(sym.DOLLA); }
-
-<YYINITIAL>	{alpha}+{alphanum}* {
+<YYINITIAL>	"$"{alpha}+{alphanum}* {
 			// IDENTIFIER
 			return new Symbol(sym.VAR, yytext());
 		}
+
 
 <YYINITIAL>    	{num}+ {
 	       		// INTEGER
 	       		return new Symbol(sym.INTEGER, new Integer(yytext()));
 	       	}
 
-
-<YYINITIAL>	\" {
-			yybegin(STRING);
-		}
-
 <YYINITIAL>	. {
 		    throw new java.io.IOException("Unrecognised character: " +
 							yytext());
 		}
 
-<STRING>	[^\"]* {
+<YYINITIAL>	([A-Za-z_=+"?"])+ {
 			// constant string
 			// System.out.println(yytext());
 			return new Symbol(sym.STRING, yytext());

@@ -8,19 +8,19 @@ import java.util.*;
 action code {:          :};
 
 parser code {:
-		HPLLexer lexer;
+		QGenLexer lexer;
 
-		public HPLParser(HPLLexer l) {
+		public QGenParser(QGenLexer l) {
                     super(l);
                     lexer = l;
                 }
 
-		public HPLParser(String file) throws FileNotFoundException {
-	            this(new HPLLexer(new FileReader(file)));
+		public QGenParser(String file) throws FileNotFoundException {
+	            this(new QGenLexer(new FileReader(file)));
 		}
 
-                public HPLParser(InputStream is) {
-                    this(new HPLLexer(is));
+                public QGenParser(InputStream is) {
+                    this(new QGenLexer(is));
                 }
 
 		public void report_error(String message, Object info) {
@@ -57,7 +57,7 @@ scan with {:
 terminal DEF, TITLE, TYPE, COUNT, ANS, BODY;
 
 //Punctuation
-terminal LPAREN, RPAREN, LBRACE, RBRACE, DOLLA, COLON;
+terminal LPAREN, RPAREN, LBRACE, RBRACE, COLON;
 
 terminal String VAR;
 terminal Integer INTEGER;
@@ -92,7 +92,7 @@ titleExp ::= TITLE COLON LBRACE STRING:title RBRACE {: RESULT = new QGenTitleExp
 
 typeExp ::= TYPE COLON LBRACE STRING:type RBRACE {: RESULT = new QGenTypeExp(type); :};
 
-countExp ::= COUNT COLON LBRACE INTEGER:count RBRACE {: RESULT = new QGenCountExp(count); :};
+countExp ::= COUNT COLON INTEGER:count {: RESULT = new QGenCountExp(count); :};
 
 defExpLstE ::= defExpLst:lst {: RESULT = lst; :} |
 	       empty {: RESULT = new ArrayList<>(); :} ;
@@ -133,11 +133,11 @@ expLst ::= expLst:lst exp:lit {:
             :};
 
 exp ::= STRING:stringlit {:
-            RESULT = new QGenString(stringlit); :}
-        lookupExp:lookup {: RESULT = lookup; :}
+            RESULT = new QGenStringExp(stringlit); :} |
+        lookupExp:lookup {: RESULT = lookup; :};
 
-lookupExp ::= DOLLA LPAREN VAR:id RPAREN {:
-            RESUlT = new QGenLookup(id);
+lookupExp ::= LPAREN VAR:id RPAREN {:
+            RESULT = new QGenLookupExp(id);
             :};
 
 empty ::= ;
