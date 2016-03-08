@@ -1,6 +1,6 @@
 title : {Print_Statements}
 type : {multichoice}
-count: 40
+count: 20
 
 def($a):
 {
@@ -9,10 +9,10 @@ $random()
 
 body:
 {
-xm= $a
-print "I_m "+ xm "+ dog years old"
+What would b the result of the following?
 
-What would be the result of the following?
+x = $a
+print "I am "+ x "+ dog years old"
 }
 
 ans:

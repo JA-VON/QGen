@@ -265,32 +265,31 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 		/* 37 */ YY_NO_ANCHOR,
 		/* 38 */ YY_NO_ANCHOR,
 		/* 39 */ YY_NO_ANCHOR,
-		/* 40 */ YY_NO_ANCHOR,
-		/* 41 */ YY_NO_ANCHOR
+		/* 40 */ YY_NO_ANCHOR
 	};
 	private int yy_cmap[] = unpackFromString(1,130,
-"29:8,5:2,4,29,5,4,29:18,5,29,30,29,26,29:3,9,10,29,30,29:4,28:10,6,29:2,30," +
-"29,30,29,27:3,3,1,27:8,2,27:12,29:4,27,29,24,23,17,21,14,22,27:2,12,27:2,13" +
-",27,20,18,16,27:2,25,11,19,27:3,15,27,7,29,8,29:2,0:2")[0];
+"30:8,5:2,4,30,5,4,30:18,5,30,29,30,26,30:3,9,10,30,29,30:4,28:10,6,30:2,29," +
+"30,29,30,27:3,3,1,27:8,2,27:12,30:4,27,30,24,23,17,21,14,22,27:2,12,27:2,13" +
+",27,20,18,16,27:2,25,11,19,27:3,15,27,7,30,8,30:2,0:2")[0];
 
-	private int yy_rmap[] = unpackFromString(1,42,
-"0,1,2,1:7,3,4,5,4:7,6,7,8,1,9,10,11,12,13,14,4,15,16,17,18,19,20,21,22,23,2" +
-"4,25")[0];
+	private int yy_rmap[] = unpackFromString(1,41,
+"0,1,2,1:7,3,4,5,6:7,7,8,1,9,10,11,12,13,14,15,16,17,18,19,20,6,21,22,23,24," +
+"25")[0];
 
 	private int yy_nxt[][] = unpackFromString(26,31,
-"1,2,30:2,3,4,5,6,7,8,9,32,30:5,40,30:3,34,30,36,38,30,21,30,10,23,30,-1:32," +
-"11,22,11,-1:7,11:15,-1,11,-1:2,11,-1:28,10,-1:3,11:3,-1:7,11:15,-1,11,-1:2," +
-"11,-1,12:3,-1:7,12:15,-1,12:2,-1:2,1,-1:31,12:3,-1:7,12:15,-1,12,-1:4,11:2," +
-"13,-1:7,11:15,-1,11,-1:2,11,-1,11:3,-1:7,11:11,14,11:3,-1,11,-1:2,11,-1,11:" +
-"3,-1:7,11:14,15,-1,11,-1:2,11,-1,11:3,-1:7,11:3,16,11:11,-1,11,-1:2,11,-1,1" +
-"1:3,-1:7,11:4,17,11:10,-1,11,-1:2,11,-1,11:3,-1:7,11:3,18,11:11,-1,11,-1:2," +
-"11,-1,11:3,-1:7,19,11:14,-1,11,-1:2,11,-1,11:3,-1:7,11:5,26,11:9,-1,11,-1:2" +
-",11,-1,11:3,-1:7,11,39,11:2,31,11:10,-1,11,-1:2,11,-1,11:3,-1:7,11:10,27,11" +
-":4,-1,11,-1:2,11,-1,11:3,-1:7,11:3,24,11:11,-1,11,-1:2,11,-1,11:3,-1:7,11:2" +
-",28,11:12,-1,11,-1:2,11,-1,11:3,-1:7,11:7,33,11:7,-1,11,-1:2,11,-1,11:3,-1:" +
-"7,11:9,29,11:5,-1,11,-1:2,11,-1,11:3,-1:7,11:9,25,11:5,-1,11,-1:2,11,-1,11:" +
-"3,-1:7,35,11:14,-1,11,-1:2,11,-1,11:3,-1:7,11:7,41,11:7,-1,11,-1:2,11,-1,11" +
-":3,-1:7,11:8,37,11:6,-1,11,-1:2,11");
+"1,2,35:2,3,4,5,6,7,8,9,36,35:5,37,35:3,38,35,39,40,35,10,35,11,35,22,-1:32," +
+"35,21,35,-1:7,35:15,-1,35,-1,35,-1:2,12:3,-1:7,12:15,-1,12,-1:31,11,-1:3,12" +
+":3,-1:7,12:15,-1,12:2,-1:3,35:3,-1:7,35:15,-1,35,-1,35,-1,1,-1:31,35:2,13,-" +
+"1:7,35:15,-1,35,-1,35,-1:2,35:3,-1:7,29,35:14,-1,35,-1,35,-1:2,35:3,-1:7,35" +
+":5,30,35:9,-1,35,-1,35,-1:2,35:3,-1:7,35:8,31,35:6,-1,35,-1,35,-1:2,35:3,-1" +
+":7,35:11,14,35:3,-1,35,-1,35,-1:2,35:3,-1:7,35:10,32,35:4,-1,35,-1,35,-1:2," +
+"35:3,-1:7,35:14,15,-1,35,-1,35,-1:2,35:3,-1:7,35:2,33,35:12,-1,35,-1,35,-1:" +
+"2,35:3,-1:7,35:3,16,35:11,-1,35,-1,35,-1:2,35:3,-1:7,35:9,34,35:5,-1,35,-1," +
+"35,-1:2,35:3,-1:7,35:4,17,35:10,-1,35,-1,35,-1:2,35:3,-1:7,35:3,18,35:11,-1" +
+",35,-1,35,-1:2,35:3,-1:7,19,35:14,-1,35,-1,35,-1:2,35:3,-1:7,35,23,35:2,24," +
+"35:10,-1,35,-1,35,-1:2,35:3,-1:7,35:7,25,35:7,-1,35,-1,35,-1:2,35:3,-1:7,35" +
+":3,26,35:11,-1,35,-1,35,-1:2,35:3,-1:7,35:7,27,35:7,-1,35,-1,35,-1:2,35:3,-" +
+"1:7,35:9,28,35:5,-1,35,-1,35,-1");
 
 	public java_cup.runtime.Symbol next_token ()
 		throws java.io.IOException {
@@ -343,8 +342,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 2:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -3:
 						break;
@@ -382,17 +382,16 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 10:
 						{
-	       		// INTEGER
-	       		return new Symbol(sym.INTEGER, new Integer(yytext()));
-	       	}
+		    throw new java.io.IOException("Unrecognised character: " +
+							yytext());
+		}
 					case -11:
 						break;
 					case 11:
 						{
-			// constant string
-			// System.out.println(yytext());
-			return new Symbol(sym.STRING, yytext());
-		}
+	       		// INTEGER
+	       		return new Symbol(sym.INTEGER, new Integer(yytext()));
+	       	}
 					case -12:
 						break;
 					case 12:
@@ -433,23 +432,24 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 21:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -21:
 						break;
 					case 22:
 						{
-			// constant string
-			// System.out.println(yytext());
-			return new Symbol(sym.STRING, yytext());
+		    throw new java.io.IOException("Unrecognised character: " +
+							yytext());
 		}
 					case -22:
 						break;
 					case 23:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -23:
 						break;
@@ -503,8 +503,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 30:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -30:
 						break;
@@ -518,8 +519,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 32:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -32:
 						break;
@@ -533,8 +535,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 34:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -34:
 						break;
@@ -548,8 +551,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 36:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -36:
 						break;
@@ -563,8 +567,9 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 38:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
+			// constant string
+			// System.out.println(yytext());
+			return new Symbol(sym.STRING, yytext());
 		}
 					case -38:
 						break;
@@ -578,18 +583,11 @@ public class QGenLexer implements java_cup.runtime.Scanner {
 						break;
 					case 40:
 						{
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
-		}
-					case -40:
-						break;
-					case 41:
-						{
 			// constant string
 			// System.out.println(yytext());
 			return new Symbol(sym.STRING, yytext());
 		}
-					case -41:
+					case -40:
 						break;
 					default:
 						yy_error(YY_E_INTERNAL,false);

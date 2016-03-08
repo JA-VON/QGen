@@ -88,13 +88,14 @@ alphanum = ({alpha}|{num})
 	       		return new Symbol(sym.INTEGER, new Integer(yytext()));
 	       	}
 
-<YYINITIAL>	. {
-		    throw new java.io.IOException("Unrecognised character: " +
-							yytext());
-		}
-
 <YYINITIAL>	([A-Za-z_=+?"\""]+) {
 			// constant string
 			// System.out.println(yytext());
 			return new Symbol(sym.STRING, yytext());
 		}
+
+<YYINITIAL>	. {
+		    throw new java.io.IOException("Unrecognised character: " +
+							yytext());
+		}
+
