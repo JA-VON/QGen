@@ -2,24 +2,26 @@ package com.qgen.lang;
 
 import com.qgen.sys.QGenException;
 
+import java.util.ArrayList;
+
 /**
  * Created by javon on 06/03/2016.
  */
 public class QGenTitleExp extends QGenExp{
 
-    private String title;
+    private ArrayList<String> title;
 
-    public QGenTitleExp(String title) {
-        System.out.println("Title:"+title);
+    public QGenTitleExp(ArrayList<String> title) {
+        StringBuilder sb = new StringBuilder();
+        for (String s : title)
+            sb.append(s + " ");
+
+        System.out.println("Title:" + sb.toString());
         this.title = title;
     }
 
-    public String getTitle() {
+    public ArrayList<String> getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     @Override
@@ -29,6 +31,6 @@ public class QGenTitleExp extends QGenExp{
 
     @Override
     public String toString() {
-        return "Title expression";
+        return "Title Expression";
     }
 }

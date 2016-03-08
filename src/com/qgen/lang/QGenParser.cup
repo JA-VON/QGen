@@ -79,6 +79,8 @@ non terminal ArrayList<QGenDefinitionExp> defExpLstE;
 non terminal ArrayList<QGenAnswerExp> ansExpLst;
 non terminal ArrayList<QGenExp> expLst;
 
+non terminal ArrayList<String> titleLst;
+
 non terminal empty;
 
 // Grammar rules
@@ -89,7 +91,10 @@ program ::= titleExp:title typeExp:type countExp:count defExpLstE:definitions bo
         RESULT = new QGenProgram(title, type, count, definitions, body, answers);
     :};
 
-titleExp ::= TITLE COLON LBRACE STRING:title RBRACE {: RESULT = new QGenTitleExp(title); :};
+titleExp ::= TITLE COLON LBRACE titleLst:title RBRACE {: RESULT = new QGenTitleExp(title); :};
+
+titleLst ::= titleLst:lst STRING:s {: lst.add(s); RESULT = lst; :} |
+                STRING:s {: RESULT = new ArrayList<>(); RESULT.add(s); :};
 
 typeExp ::= TYPE COLON LBRACE STRING:type RBRACE {: RESULT = new QGenTypeExp(type); :};
 

@@ -62,8 +62,11 @@ public class QGenEvaluator implements QGenVisitor<QGenContext,QGenValue> {
 
     @Override
     public QGenValue visitQGenTitleExp(QGenTitleExp expTitle, QGenContext context) throws QGenException {
-        String title = expTitle.getTitle();
-        QGenValue<String> result = new QGenValue<>(title);
+        StringBuilder sb = new StringBuilder();
+        for (String s : expTitle.getTitle())
+            sb.append(s + " ");
+
+        QGenValue<String> result = new QGenValue<>(sb.toString());
         return result;
     }
 
