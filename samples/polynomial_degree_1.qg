@@ -1,0 +1,28 @@
+title: {Polynomial Degree 1}
+type: {multichoice}
+count: 20
+
+set: nums{py:"range(0, 150)"}
+params: {a random_from nums}
+
+body: 
+{
+	What is the degree of the following poolynomial?
+	y^$a	
+}
+
+ans:
+{
+	$a
+}
+
+distractor:
+{
+	$a + 5
+}
+
+distractor:
+{
+	$a - 5
+}
+END

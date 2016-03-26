@@ -1,0 +1,25 @@
+sources: {poly: Polynomial.py, polydist: PolynmialDistractor.py}
+title: {Polynomial Degree 2}
+type: {multichoice}
+count: 20
+
+params:{b generated_by poly}
+
+body: 
+{
+	What is the degree of the following polynomial?
+	$b
+}
+
+ans:
+{
+	{py:"b.get_degree()"}
+}
+
+distractor: {distractor_from polydist(b)}
+
+distractor: {distractor_from polydist(b)}
+
+distractor: {distractor_from polydist(b)}
+
+END
