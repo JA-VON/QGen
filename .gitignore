@@ -53,6 +53,7 @@ hs_err_pid*
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
+/src/cachedir/packages
 /src/sources.txt
 /src/run.out
 /src/JLex
